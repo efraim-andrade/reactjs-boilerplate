@@ -1,11 +1,11 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 
-import App from './App';
+import ExampleComponent from './index';
 
-describe('App test example', () => {
+describe('Components - ExampleComponent', () => {
   it('should be render correctly', () => {
-    const { container } = render(<App />);
+    const { container } = render(<ExampleComponent />);
 
     expect(container).toBeDefined();
   });
