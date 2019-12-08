@@ -3,18 +3,20 @@ import PropTypes from 'prop-types';
 
 import { Container } from './styles';
 
-export default function ExampleComponent({ color }) {
+export default function ExampleComponent({ color, title }) {
   return (
     <Container color={color}>
-      <h1>Hello world</h1>
+      <h1>{title}</h1>
     </Container>
   );
 }
 
 ExampleComponent.defaultProps = {
   color: '#55F',
+  title: 'Hello World',
 };
 
 ExampleComponent.propTypes = {
   color: PropTypes.string,
+  title: PropTypes.string,
 };
