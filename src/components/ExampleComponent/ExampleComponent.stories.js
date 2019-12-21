@@ -4,7 +4,7 @@ import { text } from '@storybook/addon-knobs';
 import ExampleComponent from './index';
 
 export default {
-  title: 'ExampleComponent',
+  title: 'Header',
 };
 
 export const normal = () => {
